@@ -1,0 +1,55 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
+ $mario-red: #e85c5c;
+ $mario-blue: #3939e5;
+ $mario-yellow: #efd6aa;
+ $mario-brown: #996611;
+
+ .navbar-bg-color {
+   background-color:$mario-red;
+ }
+.navbar-header{
+  a {
+    color: $mario-yellow;
+  }
+}
+#navbar {
+  .active-bg {
+    background-color:$mario-blue;
+  }
+  li {
+    a{
+      color:white;
+    }
+  }
+}
+.product-header {
+  color: $mario-blue
+}
+.review-header {
+  font-weight: bolder;
+  font-size: 20px;
+  color: $mario-brown;
+}
+.button-text {
+  color: white;
+}
+.well-bg{
+background-color: $mario-yellow !important;
+}
